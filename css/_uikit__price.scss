@@ -1,0 +1,77 @@
+@use "./variables" as v;
+
+.uikit__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 590px;
+  min-height: 380px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid v.$color-button;
+  border-radius: 15px;
+}
+
+.uikit__price-title {
+  margin-top: -10px;
+  margin-bottom: 40px;
+  font-family: v.$font;
+  font-size: 36px;
+  font-weight: 600;
+  color: v.$color-button;
+}
+
+.uikit__price-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.uikit__price-item {
+  position: relative;
+  padding-left: 24px;
+  font-family: v.$font2;
+  font-size: 20px;
+  font-weight: 400;
+  color: v.$color-font2;
+}
+
+.uikit__price-item::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: v.$color-button;
+  border-radius: 4px;
+}
+
+.uikit__price-price {
+  display: flex;
+  height: 38px;
+  gap: 20px;
+}
+
+.uikit__price-new {
+  margin-top: -14px;
+  font-family: v.$font;
+  font-size: 54px;
+  font-weight: 600;
+  color: v.$color-button;
+}
+
+.ruble {
+  font-size: 95%;
+  font-weight: 400;
+}
+
+.uikit__price-old {
+  font-family: v.$font;
+  font-size: 16px;
+  font-weight: 600;
+  color: v.$color-font2;
+  opacity: 0.5;
+  text-decoration: line-through;
+}

@@ -1,15 +1,62 @@
+@use "./variables" as v;
+
 .button {
+  display: block;
+  box-sizing: border-box;
+  min-width: 340px;
+  margin-bottom: 20px;
+  padding: 25px 15px;
   text-align: center;
   align-items: center;
-  box-sizing: border-box;
-  display: block;
-  max-width: 400px;
-  max-height: 100px;
-  padding: 10px;
-  margin: 0;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  color: white;
-  background-color: blue;
+  font-family: v.$font;
+  font-size: 20px;
+  font-weight: 600;
+  color: v.$color-font;
+  border-radius: 15px;
+}
+
+.primary {
+  color: v.$color-font;
+  background-color: v.$color-button;
+}
+
+.primary:hover {
+  color: v.$color-font;
+  background-color: v.$color-button-hover;
+}
+
+.primary:active {
+  color: v.$color-font;
+  background-color: v.$color-button-active;
+}
+
+.secondary {
+  color: v.$color-font;
+  background-color: v.$color-button2;
+}
+
+.secondary:hover {
+  color: v.$color-font;
+  background-color: v.$color-button2-hover;
+}
+
+.secondary:active {
+  color: v.$color-font;
+  background-color: v.$color-button2-active;
+}
+
+.outline {
+  color: v.$color-font2;
+  background-color: v.$color-font;
+  border: 1px solid v.$color-font2;
+}
+
+.outline:hover {
+  color: v.$color-font;
+  background-color: v.$color-button3-hover;
+}
+
+.outline:active {
+  color: v.$color-font;
+  background-color: v.$color-button3-active;
 }

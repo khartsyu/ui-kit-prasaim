@@ -1,3 +1,8 @@
-@use "./reset";
-@use "./fonts";
+@use "./_reset.scss";
+@use "./_fonts.scss";
+
+@import "./_body.scss";
 @import "./_uikit__button.scss";
+@import "./_uikit__card.scss";
+@import "./_uikit__card2.scss";
+@import "./_uikit__price.scss";
