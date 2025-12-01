@@ -1,10 +1,15 @@
 @use "./variables" as v;
 
-.button {
+.buttons__indent {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.buttons__button {
   display: block;
   box-sizing: border-box;
   min-width: 340px;
-  margin-bottom: 20px;
   padding: 25px 15px;
   text-align: center;
   align-items: center;
@@ -15,48 +20,48 @@
   border-radius: 15px;
 }
 
-.primary {
+.buttons__primary {
   color: v.$color-font;
   background-color: v.$color-button;
 }
 
-.primary:hover {
+.buttons__primary:hover {
   color: v.$color-font;
   background-color: v.$color-button-hover;
 }
 
-.primary:active {
+.buttons__primary:active {
   color: v.$color-font;
   background-color: v.$color-button-active;
 }
 
-.secondary {
+.buttons__secondary {
   color: v.$color-font;
   background-color: v.$color-button2;
 }
 
-.secondary:hover {
+.buttons__secondary:hover {
   color: v.$color-font;
   background-color: v.$color-button2-hover;
 }
 
-.secondary:active {
+.buttons__secondary:active {
   color: v.$color-font;
   background-color: v.$color-button2-active;
 }
 
-.outline {
+.buttons__outline {
   color: v.$color-font2;
   background-color: v.$color-font;
   border: 1px solid v.$color-font2;
 }
 
-.outline:hover {
+.buttons__outline:hover {
   color: v.$color-font;
   background-color: v.$color-button3-hover;
 }
 
-.outline:active {
+.buttons__outline:active {
   color: v.$color-font;
   background-color: v.$color-button3-active;
 }

@@ -1,15 +1,14 @@
 @use "./variables" as v;
 
-.uikit__card {
+.card {
   width: 387px;
   min-height: 208px;
-  margin-bottom: 20px;
   padding: 8px 20px 20px;
   border: 1px solid v.$color-border;
   border-radius: 15px;
 }
 
-.uikit__card-title {
+.card__title {
   position: relative;
   z-index: 2;
   margin-bottom: 2px;
@@ -20,7 +19,7 @@
   color: v.$color-title;
 }
 
-.uikit__card-title::after {
+.card__title::after {
   position: absolute;
   bottom: 16px;
   left: 0;
@@ -29,12 +28,11 @@
   display: block;
   width: 70px;
   height: 71px;
-  background-color: v.$color-button;
+  background-color: v.$color-circle;
   border-radius: 35px;
-  opacity: 0.16;
 }
 
-.uikit__card-text {
+.card__text {
   font-family: v.$font2;
   font-size: 20px;
   font-weight: 400;

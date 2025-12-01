@@ -130,11 +130,16 @@ legend {
   padding: 20px;
 }
 
-.button {
+.buttons__indent {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.buttons__button {
   display: block;
   box-sizing: border-box;
   min-width: 340px;
-  margin-bottom: 20px;
   padding: 25px 15px;
   text-align: center;
   align-items: center;
@@ -145,62 +150,61 @@ legend {
   border-radius: 15px;
 }
 
-.primary {
+.buttons__primary {
   color: #FDFDFD;
   background-color: #023E73;
 }
 
-.primary:hover {
+.buttons__primary:hover {
   color: #FDFDFD;
   background-color: #034A89;
 }
 
-.primary:active {
+.buttons__primary:active {
   color: #FDFDFD;
   background-color: #023969;
 }
 
-.secondary {
+.buttons__secondary {
   color: #FDFDFD;
   background-color: #205C91;
 }
 
-.secondary:hover {
+.buttons__secondary:hover {
   color: #FDFDFD;
   background-color: #276FAE;
 }
 
-.secondary:active {
+.buttons__secondary:active {
   color: #FDFDFD;
   background-color: #2C6597;
 }
 
-.outline {
+.buttons__outline {
   color: #2B2B2B;
   background-color: #FDFDFD;
   border: 1px solid #2B2B2B;
 }
 
-.outline:hover {
+.buttons__outline:hover {
   color: #FDFDFD;
   background-color: #272727;
 }
 
-.outline:active {
+.buttons__outline:active {
   color: #FDFDFD;
   background-color: #3A3A3A;
 }
 
-.uikit__card {
+.card {
   width: 387px;
   min-height: 208px;
-  margin-bottom: 20px;
   padding: 8px 20px 20px;
   border: 1px solid #D9D9D9;
   border-radius: 15px;
 }
 
-.uikit__card-title {
+.card__title {
   position: relative;
   z-index: 2;
   margin-bottom: 2px;
@@ -211,7 +215,7 @@ legend {
   color: #676767;
 }
 
-.uikit__card-title::after {
+.card__title::after {
   position: absolute;
   bottom: 16px;
   left: 0;
@@ -220,12 +224,11 @@ legend {
   display: block;
   width: 70px;
   height: 71px;
-  background-color: #023E73;
+  background-color: #C5D3E1;
   border-radius: 35px;
-  opacity: 0.16;
 }
 
-.uikit__card-text {
+.card__text {
   font-family: "Inter", Arial;
   font-size: 20px;
   font-weight: 400;
@@ -233,21 +236,20 @@ legend {
   color: #2B2B2B;
 }
 
-.uikit__card2 {
+.card2 {
   width: 590px;
   min-height: 181px;
-  margin-bottom: 20px;
   padding: 20px 20px;
   background-color: #0C487D;
   border: 1px solid #D9D9D9;
   border-radius: 15px;
 }
 
-.uikit__card2-img {
+.card2__img {
   margin-bottom: 20px;
 }
 
-.uikit__card2-text {
+.card2__text {
   font-family: "Inter", Arial;
   font-size: 20px;
   font-weight: 400;
@@ -255,19 +257,18 @@ legend {
   color: #FDFDFD;
 }
 
-.uikit__price {
+.price {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 590px;
   min-height: 380px;
-  margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #023E73;
   border-radius: 15px;
 }
 
-.uikit__price-title {
+.price__title {
   margin-top: -10px;
   margin-bottom: 40px;
   font-family: "MenorahGrotesk", Arial;
@@ -276,13 +277,13 @@ legend {
   color: #023E73;
 }
 
-.uikit__price-text {
+.price__text {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.uikit__price-item {
+.price__item {
   position: relative;
   padding-left: 24px;
   font-family: "Inter", Arial;
@@ -291,7 +292,7 @@ legend {
   color: #2B2B2B;
 }
 
-.uikit__price-item::before {
+.price__item::before {
   position: absolute;
   top: 8px;
   left: 0;
@@ -303,13 +304,13 @@ legend {
   border-radius: 4px;
 }
 
-.uikit__price-price {
+.price__price {
   display: flex;
   height: 38px;
   gap: 20px;
 }
 
-.uikit__price-new {
+.price__new {
   margin-top: -14px;
   font-family: "MenorahGrotesk", Arial;
   font-size: 54px;
@@ -317,16 +318,36 @@ legend {
   color: #023E73;
 }
 
-.ruble {
-  font-size: 95%;
+.price__new-ruble {
+  font-size: 53px;
   font-weight: 400;
 }
 
-.uikit__price-old {
+.price__old {
+  position: relative;
   font-family: "MenorahGrotesk", Arial;
   font-size: 16px;
   font-weight: 600;
-  color: #2B2B2B;
-  opacity: 0.5;
-  text-decoration: line-through;
+  color: #8A8C90;
+}
+
+.price__old::after {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #8A8C90;
+}
+
+.price__old-ruble {
+  font-weight: 400;
+}
+
+.indent {
+  display: block;
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=main.css.map */

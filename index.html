@@ -9,66 +9,76 @@
 </head>
 
 <body class="body">
-  <section class="uikit__button">
-    <button class="button primary" type="button">
+  <section class="buttons">
+    <button class="buttons__button buttons__primary" type="button">
       Записаться на курс
     </button>
-    <button class="button secondary" type="button">
+    <div class="buttons__indent"></div>
+    <button class="buttons__button buttons__secondary" type="button">
       Записаться на консультацию
     </button>
-    <button class="button outline" type="button">
+    <div class="buttons__indent"></div>
+    <button class="buttons__button buttons__outline" type="button">
       Скачать полную программу
     </button>
+    <div class="buttons__indent"></div>
   </section>
 
-  <section class="uikit__card">
-    <h2 class="uikit__card-title">1</h2>
-    <p class="uikit__card-text">
-      Вас часто перебивают, не дают договорить до конца
-    </p>
-  </section>
-
-  <section class="uikit__card2">
-    <svg class="uikit__card2-img" width="46" height="46" viewBox="0 0 46 46" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M45 21.6272L24.1978 41.2463C21.6495 43.6497 18.193 45 14.589 45C10.9849 45 7.52854 43.6497 4.98011 41.2463C2.43168 38.8428 1 35.583 1 32.1838C1 28.785 2.43168 25.5251 4.98011 23.1216L25.7824 3.50249C27.4813 1.90016 29.7856 1 32.1882 1C34.5909 1 36.8952 1.90016 38.5941 3.50249C40.293 5.10481 41.2476 7.27802 41.2476 9.54405C41.2476 11.8101 40.293 13.9833 38.5941 15.5856L17.7693 35.2046C16.9198 36.0059 15.7677 36.456 14.5663 36.456C13.365 36.456 12.2129 36.0059 11.3634 35.2046C10.5139 34.4035 10.0367 33.317 10.0367 32.1838C10.0367 31.051 10.5139 29.9642 11.3634 29.1631L30.5809 11.0598"
-        stroke="#3470A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-    <p class="uikit__card2-text">
-      Теория в действии — никакой воды, только работающие техники.
-    </p>
-  </section>
-
-  <section class="uikit__price">
-    <div class="uikit__price-wrap">
-      <h2 class="uikit__price-title">
-        Стандарт
-      </h2>
-      <ul class="uikit__price-text">
-        <li class="uikit__price-item">
-          4 практических занятия по 3 часа
-        </li>
-        <li class="uikit__price-item">
-          Разбор выступлений
-        </li>
-        <li class="uikit__price-item">
-          Видеозапись всех выступлений
-        </li>
-        <li class="uikit__price-item">
-          Учебные материалы
-        </li>
-      </ul>
-    </div>
-    <div class="uikit__price-price">
-      <div class="uikit__price-new">
-        17 000<span class="ruble">₽</span>
-      </div>
-      <div class="uikit__price-old">
-        21 000<span class="ruble">₽</span>
-      </div>
-    </div>
-  </section>
+    <ul>
+      <li class="card">
+        <h2 class="card__title">1</h2>
+        <p class="card__text">
+          Вас часто перебивают, не дают договорить до конца
+        </p>
+      </li>
+    </ul>
+    <div class="indent"></div>
+    <ul>
+      <li class="card2">
+        <svg class="card2__img" width="46" height="46" viewBox="0 0 46 46" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M45 21.6272L24.1978 41.2463C21.6495 43.6497 18.193 45 14.589 45C10.9849 45 7.52854 43.6497 4.98011 41.2463C2.43168 38.8428 1 35.583 1 32.1838C1 28.785 2.43168 25.5251 4.98011 23.1216L25.7824 3.50249C27.4813 1.90016 29.7856 1 32.1882 1C34.5909 1 36.8952 1.90016 38.5941 3.50249C40.293 5.10481 41.2476 7.27802 41.2476 9.54405C41.2476 11.8101 40.293 13.9833 38.5941 15.5856L17.7693 35.2046C16.9198 36.0059 15.7677 36.456 14.5663 36.456C13.365 36.456 12.2129 36.0059 11.3634 35.2046C10.5139 34.4035 10.0367 33.317 10.0367 32.1838C10.0367 31.051 10.5139 29.9642 11.3634 29.1631L30.5809 11.0598"
+            stroke="#3470A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p class="card2__text">
+          Теория в действии — никакой воды, только работающие техники.
+        </p>
+      </li>
+    </ul>
+    <div class="indent"></div>
+    <ul>
+      <li class="price">
+        <div class="price__wrap">
+          <h2 class="price__title">
+            Стандарт
+          </h2>
+          <ul class="price__text">
+            <li class="price__item">
+              4 практических занятия по 3 часа
+            </li>
+            <li class="price__item">
+              Разбор выступлений
+            </li>
+            <li class="price__item">
+              Видеозапись всех выступлений
+            </li>
+            <li class="price__item">
+              Учебные материалы
+            </li>
+          </ul>
+        </div>
+        <div class="price__price">
+          <div class="price__new">
+            17 000<span class="price__new-ruble">₽</span>
+          </div>
+          <div class="price__old">
+            21 000<span class="price__old-ruble">₽</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+ 
 
 </body>
 
